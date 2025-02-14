@@ -1,7 +1,7 @@
 #!/bin/bash
 
-CUDA_VISIBLE_DEVICES=2,3 accelerate launch --config_file scripts/zero3.yaml scripts/finetune.py \
-    --model_name_or_path /shd/zzr/models/qwen2.5-base-3b \
+CUDA_VISIBLE_DEVICES=0,1 accelerate launch --config_file scripts/zero3.yaml scripts/finetune.py \
+    --model_name_or_path data/models/qwen2.5-base-3b \
     --train_data_path data/train.jsonl \
     --eval_data_path data/eval.jsonl \
     --output_dir output/qwen2.5_base_3b_sft \

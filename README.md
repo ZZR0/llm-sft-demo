@@ -36,8 +36,9 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 ### 环境构建步骤
 ```bash
-git clone https://github.com/QwenLM/Qwen2.5.git
-cd Qwen2.5/examples/llama-factory
+git clone git@github.com:ZZR0/llm-sft-demo.git
+
+cd llm-sft-demo
 
 # 创建隔离环境
 uv venv llm-sft --python=3.11 && source llm-sft/bin/activate # 如果用fish，则使用llm-sft/bin/activate.fish
